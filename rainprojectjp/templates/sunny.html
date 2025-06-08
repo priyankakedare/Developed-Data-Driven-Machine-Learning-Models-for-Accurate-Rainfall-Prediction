@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="../static/css/output.css" />
+  <style>
+    body {
+      background-image: url('../static/css/bgsunny.webp');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .weather-info {
+      background-color: rgba(255, 255, 255, 0.92);
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 350px;
+      width: 90%;
+      margin: 40px auto;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .sunny-video {
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .info-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #1e40af;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 15px 0 10px;
+    }
+
+    ul {
+      font-size: 14px;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    p {
+      font-size: 15px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="weather-info">
+    <video class="sunny-video" autoplay muted loop playsinline>
+      <source src="../static/css/sunnyvideo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <h1>Weather Forecast for Tomorrow</h1>
+    <p>The weather tomorrow will be sunny.</p>
+
+    <div class="suggestions">
+      <h2>🌞 Bright Skies Ahead! Here’s What to Do</h2>
+      <ul>
+        <li>Enjoy a walk or jog in the morning sun.</li>
+        <li>Plan a picnic or outdoor activity with friends or family.</li>
+        <li>Wear sunglasses and apply sunscreen.</li>
+        <li>Stay hydrated—carry a water bottle.</li>
+        <li>Perfect day for doing laundry or drying clothes outside!</li>
+      </ul>
+    </div>
+
+    <a class="info-btn" href="/">Predict Again</a>
+  </div>
+</body>
+</html>

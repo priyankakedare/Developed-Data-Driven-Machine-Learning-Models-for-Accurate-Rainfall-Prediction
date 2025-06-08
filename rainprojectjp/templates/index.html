@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainfall Prediction</title>
+  <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+
+  <nav>
+    <header class="nav-container">
+      <div class="navigation">
+        <a onclick="navFunction('home')">Home</a>
+        <a onclick="navFunction('about')">About Our Project</a>
+        <a onclick="navFunction('predict')">Start Prediction</a>
+      </div>
+    </header>
+  </nav>
+
+  <!-- Home Section with Video Background -->
+  <section id="home">
+    <div class="video-container">
+      <video autoplay muted loop id="background-video">
+        <source src="../static/videos/44a3c26b9fca915ae1d2baecd5126c95.mp4" type="video/mp4">
+
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="content">
+      <div class="info">
+        <h1>"Welcome to the Rainfall Prediction <span>Project"</span></h1>
+        <p> a smart and intuitive web application powered by machine learning.Our goal is to accurately predict rainfall for the next day, helping users make informed decisions using advanced data-driven algorithms.Whether you're stepping out for work, planning your day, or managing resources, this tool is designed to keep you ahead of the weather.<br>Stay prepared, stay dry, and stay smart. ☔💡</p>
+        <a class="info-btn" onclick="navFunction('about')">More info</a>
+        <a class="info-btn" onclick="navFunction('predict')">Predict</a>
+      </div>
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rainfall Prediction - About the Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #1e1e2f;
+      color: white;
+      line-height: 1.8;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: auto;
+      padding: 60px 25px;
+    }
+
+    h2 {
+      font-size: 2.6em;
+      margin-bottom: 10px;
+      color: #4fc3f7;
+    }
+
+    h3 {
+      font-size: 1.8em;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      color: #4fc3f7;
+    }
+
+    h4 {
+      margin-top: 30px;
+      font-size: 1.3em;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 1.15em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    ul li {
+      font-size: 1.15em;
+      margin-bottom: 12px;
+    }
+
+    .italic {
+      font-style: italic;
+      color: #9fe2ff;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    a {
+      color: #4fc3f7;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #82e0ff;
+    }
+
+    .section {
+      background-color: #2a2a3d;
+      padding: 40px;
+      border-radius: 16px;
+      margin-top: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-4px);
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2em;
+      }
+
+      h3 {
+        font-size: 1.4em;
+      }
+
+      .container {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🌐 About the Project</h2>
+    <span class="italic">Forecast the future, one drop at a time.</span>
+
+    <p>
+      Our Rainfall Prediction System blends smart data science with powerful machine learning to predict the chance of rainfall for the next day — helping you plan better, stay safe, and be weather-ready.
+    </p>
+
+    <div class="section">
+      <h3>🔍 What’s Inside?</h3>
+
+      <h4>🧹 Data Preprocessing</h4>
+      <p>We cleaned, balanced, and prepared historical weather data using smart preprocessing pipelines — ensuring your predictions are based on the most reliable data possible.</p>
+
+      <h4>🧠 Feature Engineering</h4>
+      <p>Key atmospheric features were selected using data-driven techniques to enhance model accuracy and reduce noise.</p>
+
+      <h4>🧬 Dimensionality Reduction (PCA)</h4>
+      <p>Using Principal Component Analysis, we simplified complex data into meaningful components, speeding up training and improving performance.</p>
+
+      <h4>⚡ Models</h4>
+<p>Several machine learning models were trained and evaluated to determine the most accurate approach. These include:</p>
+<ul>
+  <li>🌲 <strong>Random Forest</strong></li>
+  <li>🌐 <strong>XGBoost</strong></li>
+  <li>🔍 <strong>Logistic Regression</strong></li>
+  <li>🌿 <strong>Decision Tree</strong></li>
+  <li>🧠 <strong>Artificial Neural Network (ANN)</strong></li>
+</ul>
+
+
+<div class="section">
+      <h3>⚙️ Project Workflow</h3>
+      <ul>
+        <li>✔️ Clean & preprocess raw weather data</li>
+        <li>✔️ Select features or apply PCA</li>
+        <li>✔️ Train & evaluate XGBoost models</li>
+        <li>✔️ Save & deploy models in a web app</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>🎯 The Goal</h3>
+      <p>
+        To build an intelligent system that predicts rainfall with high accuracy — helping individuals, farmers, and planners make smarter, weather-aware decisions.
+      </p>
+    </div>
+  </div>
+
+
+
+  <section id="predict" class="hidden">
+    <form action="/predict" method="POST" class="form">
+      <h1 class="ph1">Predict Rainfall</h1>
+      <div class="ml-input">
+        <div class="row">
+          <div class="col1">
+            <div>
+              <input type="number" id="date" name="date" placeholder="Month" required>
+            </div>
+            <div>
+              <input type="text" id="mintemp" name="mintemp" placeholder="Min Temperature in °C" required>
+            </div>
+            <div>
+              <input type="text" id="maxtemp" name="maxtemp" placeholder="Max Temperature in °C" required>
+            </div>
+            <div>
+              <input type="text" id="rainfall" name="rainfall" placeholder="Rainfall in mm" required>
+            </div>
+            <div>
+              <input type="text" id="evaporation" name="evaporation" placeholder="Evaporation in mm" required>
+            </div>
+            <div>
+              <input type="text" id="sunshine" name="sunshine" placeholder="Sunshine (hours)" required>
+            </div>
+          </div>
+          <div class="col2">
+            <div>
+              <input type="text" id="windgustspeed" name="windgustspeed" placeholder="Wind Gust Speed kmph" required>
+            </div>
+            <div>
+              <input type="text" id="windspeed9am" name="windspeed9am" placeholder="Wind Speed 9am kmph" required>
+            </div>
+            <div>
+              <input type="text" id="windspeed3pm" name="windspeed3pm" placeholder="Wind Speed 3pm kmph" required>
+            </div>
+            <div>
+              <input type="text" id="humidity9am" name="humidity9am" placeholder="Humidity 9am in %" required>
+            </div>
+            <div>
+              <input type="text" id="humidity3pm" name="humidity3pm" placeholder="Humidity 3pm in %" required>
+            </div>
+            <div>
+              <input type="text" id="pressure9am" name="pressure9am" placeholder="Pressure 9am in hectopascals" required>
+            </div>
+          </div>
+          <div class="col3">
+            <div>
+              <input type="text" id="pressure3pm" name="pressure3pm" placeholder="Pressure 3pm in hectopascals" required>
+            </div>
+            <div>
+              <input type="text" id="temp9am" name="temp9am" placeholder="Temperature 9am in °C" required>
+            </div>
+            <div>
+              <input type="text" id="temp3pm" name="temp3pm" placeholder="Temperature 3pm in °C" required>
+            </div>
+            <div>
+              <input type="text" id="cloud9am" name="cloud9am" placeholder="Cloud 9am eighths" required>
+            </div>
+            <div>
+              <input type="text" id="cloud3pm" name="cloud3pm" placeholder="Cloud 3pm eighths" required>
+            </div>
+            <div>
+              <select id="location" name="location" aria-label="Location">
+                <option selected>Select Location</option>
+                  <option value=24>Adelaide</option>
+                  <option value=7>Albany</option>
+                  <option value=30>Albury</option>
+                  <option value=46>AliceSprings</option>
+                  <option value=33>BadgerysCreek</option>
+                  <option value=14>Ballarat</option>
+                  <option value=36>Bendigo</option>
+                  <option value=21>Brisbane</option>
+                  <option value=2>Cairns</option>
+                  <option value=43>Cobar</option>
+                  <option value=9>CoffsHarbour</option>
+                  <option value=4>Dartmoor</option>
+                  <option value=11>Darwin</option>
+                  <option value=15>GoldCoast</option>
+                  <option value=17>Hobart</option>
+                  <option value=45>Katherine</option>
+                  <option value=23>Launceston</option>
+                  <option value=28>Melbourne</option>
+                  <option value=25>Melbourne Airport</option>
+                  <option value=44>Mildura</option>
+                  <option value=42>Moree</option>
+                  <option value=5>MountGambier</option>
+                  <option value=12>MountGinini</option>
+                  <option value=19>Newcastle </option>
+                  <option value=47>Nhil</option>
+                  <option value=13>NorahHead</option>
+                  <option value=6>NorfolkIsland</option>
+                  <option value=32>Nuriootpa</option>
+                  <option value=40>PearceRAAF</option>
+                  <option value=31>Penrith</option>
+                  <option value=26>Perth</option>
+                  <option value=35>Perth Airport</option>
+                  <option value=1>Portland</option>
+                  <option value=37>Richmond</option>
+                  <option value=27>Sale</option>
+                  <option value=41>Salmon Gums</option>
+                  <option value=10>Sydney</option>
+                  <option value=16>Sydney Airport</option>
+                  <option value=39>Townsville</option>
+                  <option value=34>Tuggeranong</option>
+                  <option value=49>Uluru</option>
+                  <option value=38>WaggaWagga</option>
+                  <option value=3>Walpole</option>
+                  <option value=18>Watsonia</option>
+                  <option value=22>William Town</option>
+                  <option value=8>Witchcliffe</option>
+                  <option value=20>Wollongong</option>
+                  <option value=48>Woomera</option>
+                  <option value=50>Delhi</option>
+              </select>
+            </div>
+          </div>
+          <div class="col4">
+            <div>
+              <select id="winddir9am" name="winddir9am" aria-label="Wind Direction 9am">
+                <option selected>Wind Direction 9am</option>
+                <option value=1>N</option>
+                <option value=5>W</option>
+                <option value=10>S</option>
+                <option value=15>E</option>
+                <option value=2>NW</option>
+                <option value=9>NE</option>
+                <option value=7>SW</option>
+                <option value=13>SE</option>
+                <option value=0>NNW</option>
+                <option value=3>NNE</option>
+                <option value=8>SSW</option>
+                <option value=11>SSE</option>
+                <option value=4>WNW</option>
+                <option value=6>WSW</option>
+                <option value=12>ENE</option>
+                <option value=14>ESE</option>
+              </select>
+            </div>
+            <div>
+              <select id="winddir3pm" name="winddir3pm" aria-label="Wind Direction at 3pm">
+                <option selected>Wind Direction 3pm</option>
+                <option value=2>N</option>
+                <option value=4>W</option>
+                <option value=8>S</option>
+                <option value=14>E</option>
+                <option value=0>NW</option>
+                <option value=11>NE</option>
+                <option value=9>SW</option>
+                <option value=10>SE</option>
+                <option value=1>NNW</option>
+                <option value=5>NNE</option>
+                <option value=7>SSW</option>
+                <option value=12>SSE</option>
+                <option value=3>WNW</option>
+                <option value=6>WSW</option>
+                <option value=13>ENE</option>
+                <option value=15>ESE</option>
+              </select>
+            </div>
+            <div>
+              <select id="windgustdir" name="windgustdir" aria-label="Wind Gust Direction">
+                <option selected>Wind Gust Direction</option>
+                <option value=3>N</option>
+                <option value=4>W</option>
+                <option value=7>S</option>
+                <option value=15>E</option>
+                <option value=1>NW</option>
+                <option value=11>NE</option>
+                <option value=9>SW</option>
+                <option value=12>SE</option>
+                <option value=0>NNW</option>
+                <option value=6>NNE</option>
+                <option value=8>SSW</option>
+                <option value=10>SSE</option>
+                <option value=2>WNW</option>
+                <option value=5>WSW</option>
+                <option value=14>ENE</option>
+                <option value=13>ESE</option>
+              </select>
+            </div>
+            <div>
+              <select id="raintoday" name="raintoday" aria-label="Rain Today">
+                <option selected>Did it Rain Today</option>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <button type="submit">Predict</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="../static/js/index.js"></script>
+</body>
+
+</html>

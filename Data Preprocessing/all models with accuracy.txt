@@ -1,0 +1,197 @@
+
+@ FEATURES SELECTION RANIFALLPREDICTIONMODELS
+1 random forest 
+
+              precision    recall  f1-score   support
+
+       False       0.85      0.92      0.88     34058
+        True       0.60      0.42      0.49      9580
+
+    accuracy                           0.81     43638
+   macro avg       0.72      0.67      0.69     43638
+weighted avg       0.79      0.81      0.80     43638
+
+
+2 logistic regression
+
+         precision    recall  f1-score   support
+
+       False       0.85      0.95      0.90     22726
+        True       0.70      0.41      0.51      6366
+
+    accuracy                           0.83     29092
+   macro avg       0.77      0.68      0.71     29092
+weighted avg       0.82      0.83      0.81     29092
+
+3. decission tree
+
+   precision    recall  f1-score   support
+
+       False       0.84      0.83      0.84     34058
+        True       0.43      0.46      0.44      9580
+
+    accuracy                           0.75     43638
+   macro avg       0.64      0.64      0.64     43638
+weighted avg       0.75      0.75      0.75     43638
+
+4.naive bayes
+
+   precision    recall  f1-score   support
+
+       False       0.88      0.83      0.85     22726
+        True       0.49      0.58      0.53      6366
+
+    accuracy                           0.78     29092
+   macro avg       0.68      0.71      0.69     29092
+weighted avg       0.79      0.78      0.78     29092
+
+5.ANN 
+
+           precision    recall  f1-score   support
+
+       False       0.84      0.96      0.90     22672
+        True       0.73      0.36      0.49      6420
+
+    accuracy                           0.83     29092
+   macro avg       0.78      0.66      0.69     29092
+weighted avg       0.82      0.83      0.81     29092
+
+6.XGBoost
+ precision    recall  f1-score   support
+
+       False    0.84004   0.84404   0.84203     22063
+        True    0.76438   0.75892   0.76164     14709
+
+    accuracy                        0.80999     36772
+   macro avg    0.80221   0.80148   0.80184     36772
+weighted avg    0.80978   0.80999   0.80988     36772
+
+
+
+@RAINFALL PREDICTION MODELS WITH PCA
+1. random forest
+
+              precision    recall  f1-score   support
+
+       False       0.86      0.95      0.90     34058
+        True       0.70      0.45      0.55      9580
+
+    accuracy                           0.84     43638
+   macro avg       0.78      0.70      0.73     43638
+weighted avg       0.83      0.84      0.82     43638
+
+2.logistic regression
+  precision    recall  f1-score   support
+
+       False       0.85      0.95      0.90     22726
+        True       0.68      0.42      0.52      6366
+
+    accuracy                           0.83     29092
+   macro avg       0.77      0.68      0.71     29092
+weighted avg       0.82      0.83      0.81     29092
+
+3.decission tree
+ precision    recall  f1-score   support
+
+       False       0.85      0.84      0.85     34058
+        True       0.45      0.47      0.46      9580
+
+    accuracy                           0.76     43638
+   macro avg       0.65      0.66      0.65     43638
+weighted avg       0.76      0.76      0.76     43638
+
+4.naive bayes
+
+  precision    recall  f1-score   support
+
+       False       0.85      0.93      0.89     22726
+        True       0.63      0.44      0.52      6366
+
+    accuracy                           0.82     29092
+   macro avg       0.74      0.68      0.70     29092
+weighted avg       0.81      0.82      0.81     29092
+
+5.ANN
+
+       precision    recall  f1-score   support
+
+       False       0.86      0.94      0.90     22672
+        True       0.67      0.46      0.55      6420
+
+    accuracy                           0.83     29092
+   macro avg       0.77      0.70      0.72     29092
+weighted avg       0.82      0.83      0.82     29092
+
+6.XGBoost
+precision    recall  f1-score   support
+
+       False    0.86498   0.93401   0.89817     22717
+        True    0.67142   0.48047   0.56012      6375
+
+    accuracy                        0.83463     29092
+   macro avg    0.76820   0.70724   0.72915     29092
+weighted avg    0.82257   0.83463   0.82409     29092
+
+
+@WITH ALL FEATURES
+
+1.random forest
+
+              precision    recall  f1-score   support
+
+       False       0.87      0.96      0.91     34058
+        True       0.76      0.48      0.59      9580
+
+    accuracy                           0.85     43638
+   macro avg       0.81      0.72      0.75     43638
+weighted avg       0.84      0.85      0.84     43638
+
+2.decission tree
+precision    recall  f1-score   support
+
+       False       0.87      0.85      0.86     34058
+        True       0.50      0.54      0.52      9580
+
+    accuracy                           0.78     43638
+   macro avg       0.69      0.70      0.69     43638
+weighted avg       0.79      0.78      0.79     43638
+
+3.logistic regression
+precision    recall  f1-score   support
+
+       False       0.87      0.95      0.90     22726
+        True       0.71      0.47      0.57      6366
+
+    accuracy                           0.84     29092
+   macro avg       0.79      0.71      0.74     29092
+weighted avg       0.83      0.84      0.83     29092
+
+4.naive bayes
+precision    recall  f1-score   support
+
+       False       0.89      0.83      0.86     22726
+        True       0.51      0.63      0.56      6366
+
+    accuracy                           0.79     29092
+   macro avg       0.70      0.73      0.71     29092
+weighted avg       0.81      0.79      0.79     29092
+
+5.ANN
+ precision    recall  f1-score   support
+
+       False       0.86      0.94      0.90     22672
+        True       0.70      0.47      0.56      6420
+
+    accuracy                           0.84     29092
+   macro avg       0.78      0.70      0.73     29092
+weighted avg       0.83      0.84      0.83     29092
+
+6.XGBoost
+precision    recall  f1-score   support
+
+       False    0.94807   0.92839   0.93812     22063
+        True    0.89583   0.92372   0.90956     14709
+
+    accuracy                        0.92652     36772
+   macro avg    0.92195   0.92605   0.92384     36772
+weighted avg    0.92717   0.92652   0.92670     36772

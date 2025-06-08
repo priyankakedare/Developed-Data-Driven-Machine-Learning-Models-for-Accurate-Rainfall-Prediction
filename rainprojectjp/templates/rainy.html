@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="../static/css/output.css" />
+
+  <style>
+    /* -----  GLOBAL  ----- */
+    html, body { height: 100%; margin: 0; }
+    body {
+      background: url('../static/css/rainybg.jpg') center / cover no-repeat fixed;
+      display: flex;                /* center the card */
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* -----  CARD  ----- */
+    .weather-info {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 15px;
+      padding: 20px;
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    /* -----  VIDEO  ----- */
+    .rainy-video {
+      width: 100%;
+      aspect-ratio: 16/9;            /* consistent height on any screen */
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* -----  TEXT & BUTTON  ----- */
+    h1   { font-size: 20px; margin: 8px 0; }
+    h2   { font-size: 16px; margin: 15px 0 10px; }
+    p    { font-size: 15px; margin: 10px 0; }
+    ul   { font-size: 14px; text-align: left; padding-left: 20px; margin: 0; }
+
+    .info-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 22px;
+      background: #1e3a8a;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* -----  SMALL‑SCREEN TWEAKS  ----- */
+    @media (max-width: 480px) {
+      h1 { font-size: 18px; }
+      h2 { font-size: 15px; }
+      ul { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="weather-info">
+    <video class="rainy-video" autoplay muted loop playsinline>
+      <source src="../static/css/rainyvideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h1>Weather Forecast for Tomorrow</h1>
+    <p>The weather tomorrow will be rainy.</p>
+
+    <div class="suggestions">
+      <h2>🌂 Rainy Day? Here's What You Can Do!</h2>
+      <ul>
+        <li>Carry an umbrella or wear a raincoat.</li>
+        <li>Avoid outdoor plans if possible.</li>
+        <li>Drive slowly and carefully — roads may be slippery.</li>
+        <li>Check for weather alerts or road blockages.</li>
+        <li>Wear waterproof shoes to stay dry and warm.</li>
+      </ul>
+    </div>
+
+    <a class="info-btn" href="/">Predict Again</a>
+  </div>
+
+</body>
+</html>
